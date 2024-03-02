@@ -89,7 +89,7 @@ export default function FaceRecognition() {
 
   useEffect(() => {
     loadModels();
-  });
+  }, []);
 
   const videoPlay = async () => {
     const labeledFaceDescriptors = await getLabeledFaceDescriptions();
