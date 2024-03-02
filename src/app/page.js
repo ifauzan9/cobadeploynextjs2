@@ -1,4 +1,4 @@
-import { FaceRecognition } from "@/pages/FaceRecognition";
+import FaceRecognition from "@/pages/FaceRecognition";
 import Image from "next/image";
 
 export default function Home() {

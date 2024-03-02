@@ -16,7 +16,7 @@ import {
 } from "face-api.js";
 import React, { useEffect, useRef, useState } from "react";
 
-export const FaceRecognition = () => {
+export default function FaceRecognition() {
   const videoRef = useRef(null);
   const [label, setLabel] = useState("");
   //   const photoRef = useRef(null);
@@ -89,7 +89,7 @@ export const FaceRecognition = () => {
 
   useEffect(() => {
     loadModels();
-  }, []);
+  });
 
   const videoPlay = async () => {
     const labeledFaceDescriptors = await getLabeledFaceDescriptions();
@@ -145,4 +145,4 @@ export const FaceRecognition = () => {
       {/* <img src="/images/ridwan/1.png"></img> */}
     </div>
   );
-};
+}
